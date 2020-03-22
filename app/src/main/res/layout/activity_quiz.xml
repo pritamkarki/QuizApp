@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#754747">
+
+    <!-- Question 1 -->
+
+    <TextView
+
+        style="@style/questionStyle"
+        android:text="1. Where are the contents of your computer's hard drive indexed?"/>
+
+
+    <RadioGroup
+        android:id="@+id/num_one_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/msn_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="MSN" />
+        <RadioButton
+            android:id="@+id/yahoo_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Yahoo!" />
+        <RadioButton
+            android:id="@+id/above_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="None of the above" />
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Google" />
+
+    </RadioGroup>
+
+    <!-- Question 2 -->
+
+    <TextView
+
+        style="@style/questionStyle"
+        android:text="2. Internet Explorer is a:"
+        />
+
+    <RadioGroup
+        android:id="@+id/num_two_radio_group"
+        style="@style/radioStyle">
+/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=" Any person browsing the net" />
+        <RadioButton
+            android:id="@+id/web_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Web Browser" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Graphing Package" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="News Reader" />
+
+    </RadioGroup>
+
+    <!-- Question 3 -->
+
+    <TextView
+
+        style="@style/questionStyle"
+        android:text="3. Which of the following is an example of non-volatile memory?"
+        />
+
+
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Please enter your answer"
+        android:inputType="text"/>
+
+
+    <!-- Question 4 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#BA8418"
+        android:text="4. Computer viruses come in different forms, and the most common infections are:"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <CheckBox
+        android:id="@+id/boot_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boot Sector Virus"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/file_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File Infector Virus"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/multi_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multipartite Virus"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:id="@+id/overwrite_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overwrite Virus"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"/>
+
+    <TextView
+
+        style="@style/questionStyle"
+        android:text="5. One Gigabyte is approximately equal is:"
+        />
+
+
+    <!-- Question 5 -->
+
+    <RadioGroup
+        android:id="@+id/num_five_radio_group"
+
+        style="@style/radioStyle">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="1000,000 bytes" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="None of these" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="1000,000,000,000 bytes" />
+        <RadioButton
+            android:id="@+id/gb_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="1000,000,000 bytes" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#D8A949"
+        android:text="Submit" />
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreActivity"
+    android:background="#B17D15">
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="120dp"
+        android:background="#0091EA"
+        android:onClick="clickreset"
+        android:text="Reset"
+        android:textColor="#F0F5F8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="382dp"
+        android:layout_height="361dp"
+        android:background="@drawable/ss"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#0E0E0E"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="202dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
